@@ -1,7 +1,8 @@
 import { join } from 'path'
 import type { Config } from 'tailwindcss'
 import { skeleton } from '@skeletonlabs/tw-plugin'
-import { theme } from './src/theme'
+import { niceTheme } from './src/themes/nice-theme'
+import { nastyTheme } from './src/themes/nasty-theme';
 
 export default {
 	darkMode: 'class',
@@ -13,7 +14,8 @@ export default {
 		skeleton({
 			themes: {
 				custom: [
-					theme
+					niceTheme,
+					nastyTheme
 				]
 			},
 		}),

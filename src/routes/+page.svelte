@@ -1,5 +1,16 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	import { browser } from '$app/environment';
 
+	if (browser) {
+		const changeThemeButton: HTMLButtonElement = document.getElementById('change-theme-button') as HTMLButtonElement;
+
+		if (changeThemeButton) {
+			changeThemeButton.addEventListener('click', () => {
+				document.body.setAttribute('data-theme', 'nasty-theme');
+			});
+		}
+	}
+</script>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2">Welcome to Skeleton.</h2>
@@ -18,15 +29,10 @@
 			</svg>
 		</figure>
 		<!-- / -->
-		<div class="flex justify-center space-x-2">
-			<a
-				class="btn variant-filled"
-				href="https://skeleton.dev/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Launch Documentation
-			</a>
+		<div class="flex justify-center space-x-2" id="change-theme-button">
+			<div class="btn variant-filled">
+				Change Theme
+			</div>
 		</div>
 		<div class="space-y-2">
 			<p>Try editing the following:</p>
