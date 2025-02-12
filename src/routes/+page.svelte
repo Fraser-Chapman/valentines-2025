@@ -1,4 +1,5 @@
 <script lang="ts">
+	import bearWithRose from '$lib/assets/peach-and-goma-rose.png';
 	import { browser } from '$app/environment';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
@@ -55,6 +56,9 @@
 			<div hidden="hidden" bind:this={el3} class="floating">🖕</div>
 			<div hidden="hidden" bind:this={el4} class="floating">OMG!</div>
 		</div>
+
+		<img src="{bearWithRose}" style="width: 30%; height: 30%" alt="a lovely little bear holding a rose">
+
 
 		<h2 class="h2">Will you be my valentine?</h2>
 		<div class="flex justify-center space-x-2">
