@@ -6,10 +6,11 @@
 	let el1: HTMLElement;
 	let el2: HTMLElement;
 	let el3: HTMLElement;
+	let el4: HTMLElement;
 	let elements: HTMLElement[] = [];
 
 	onMount(() => {
-		elements = [el1, el2, el3];
+		elements = [el1, el2, el3, el4];
 	})
 
 	if (browser) {
@@ -52,6 +53,7 @@
 			<div hidden="hidden" bind:this={el1} class="floating">🔥</div>
 			<div hidden="hidden" bind:this={el2} class="floating">😡</div>
 			<div hidden="hidden" bind:this={el3} class="floating">🖕</div>
+			<div hidden="hidden" bind:this={el4} class="floating">OMG!</div>
 		</div>
 
 		<h2 class="h2">Will you be my valentine?</h2>
