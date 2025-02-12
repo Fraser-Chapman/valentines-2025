@@ -1,6 +1,7 @@
 <script lang="ts">
 	import bearWithRose from '$lib/assets/peach-and-goma-rose.png';
 	import { browser } from '$app/environment';
+	import { base } from '$app/paths'
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
 
@@ -62,9 +63,12 @@
 
 		<h2 class="h2">Will you be my valentine?</h2>
 		<div class="flex justify-center space-x-2">
-			<div class="btn variant-filled" id="yes-button">
+			<a class="btn variant-filled"
+				 id="yes-button"
+				 href="{base}/yes"
+			>
 				Yes
-			</div>
+			</a>
 			<div class="btn variant-filled" id="no-button">
 				No
 			</div>
