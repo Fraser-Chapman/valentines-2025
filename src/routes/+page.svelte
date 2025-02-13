@@ -59,7 +59,7 @@
 			<div hidden="hidden" bind:this={el4} class="floating">OMG!</div>
 		</div>
 
-		<img src="{bearsCuddling}" style="width: 30%; height: 30%" alt="a lovely little bear holding a rose">
+		<img src="{bearWithRose}" alt="a lovely little bear holding a rose">
 
 
 		<h2 class="h2">Will you be my valentine?</h2>
