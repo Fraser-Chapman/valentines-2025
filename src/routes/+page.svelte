@@ -1,5 +1,6 @@
 <script lang="ts">
 	import bearWithRose from '$lib/assets/peach-and-goma-rose.png';
+	import bearsCuddling from '$lib/assets/peach-and-goma-valentines.png'
 	import { browser } from '$app/environment';
 	import { base } from '$app/paths'
 	import { gsap } from 'gsap';
@@ -58,7 +59,7 @@
 			<div hidden="hidden" bind:this={el4} class="floating">OMG!</div>
 		</div>
 
-		<img src="{bearWithRose}" style="width: 30%; height: 30%" alt="a lovely little bear holding a rose">
+		<img src="{bearsCuddling}" style="width: 30%; height: 30%" alt="a lovely little bear holding a rose">
 
 
 		<h2 class="h2">Will you be my valentine?</h2>
