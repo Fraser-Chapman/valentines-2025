@@ -1,6 +1,5 @@
 <script lang="ts">
 	import bearWithRose from '$lib/assets/peach-and-goma-rose.png';
-	import bearsCuddling from '$lib/assets/peach-and-goma-valentines.png'
 	import { browser } from '$app/environment';
 	import { base } from '$app/paths'
 	import { gsap } from 'gsap';
