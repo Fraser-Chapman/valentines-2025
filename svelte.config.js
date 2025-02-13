@@ -20,7 +20,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: dev ? 'http://localhost:5173' : '/valentines-day'
+			base: dev ? 'http://localhost:5173' : '/valentines-2025'
 		}
 	}
 };
