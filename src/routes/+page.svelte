@@ -13,9 +13,7 @@
 
 	onMount(() => {
 		elements = [el1, el2, el3, el4];
-	})
 
-	if (browser) {
 		const noButton: HTMLButtonElement = document.getElementById('no-button') as HTMLButtonElement;
 		const yesButton = document.getElementById('yes-button') as HTMLButtonElement;
 
@@ -46,6 +44,10 @@
 				document.body.setAttribute('data-theme', 'nice-theme');
 			});
 		}
+	})
+
+	if (browser) {
+
 	}
 </script>
 <div class="container h-full mx-auto flex justify-center items-center">
